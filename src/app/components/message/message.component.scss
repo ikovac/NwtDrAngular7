@@ -1,0 +1,21 @@
+.message-wrapper {
+  text-align: center;
+  background: white;
+  position: fixed;
+  padding: 20px;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 3px solid black;
+
+  button {
+    padding: 10px;
+    background: transparent;
+    border: 1px solid #50aeff;
+    cursor: pointer;
+    &:hover {
+      background-color: #50aeff;
+      color: white;
+    }
+  }
+}

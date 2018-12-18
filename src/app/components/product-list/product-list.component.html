@@ -1,0 +1,30 @@
+<div class="products-wrapper">
+  <div class="product" *ngFor="let product of (products | async)">
+    <div class="content-header">
+      <h2>
+        <a
+          [routerLink]="['/proizvod', product.id]"
+          routerLinkActive="router-link-active"
+          >{{ product.naziv }}</a
+        ><i
+          title="Dodaj u favorite"
+          class="fas fa-heart"
+          [ngClass]="{ added: product.favorit }"
+          (click)="onWishlistAddClick(product)"
+        ></i>
+      </h2>
+      <h3>{{ product.cijena }} €</h3>
+    </div>
+    <div class="content-main">
+      <div class="image-wrapper">
+        <img
+          src="../../../assets/images/{{ product.image_name }}"
+          alt="{{ product.naziv }}"
+        />
+      </div>
+      <p class="opis">{{ product.opis }}</p>
+    </div>
+  </div>
+</div>
+
+<app-message [messageText]="message"></app-message>

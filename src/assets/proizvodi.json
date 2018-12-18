@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "naziv": "Carbonia roller 115 x6",
+    "image_name": "carbonia.jpg",
+    "cijena": 1690,
+    "opis": "Carbonia 115 - choice for deep water spearfishing. Amazing speed, brutal penetration and accuracy will leave you amazed every time you will pull the trigger.",
+    "favorit": true,
+    "rezenzije": [
+      {
+        "recenzija_id": 1,
+        "ocjena": 5,
+        "komentar": "Najbolja puška ikad",
+        "username": "mate"
+      },
+      {
+        "recenzija_id": 2,
+        "ocjena": 5,
+        "komentar": "Prezadovoljan...",
+        "username": "jure"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "naziv": "Bluetec Acid 105",
+    "image_name": "bluetec_acid.jpg",
+    "cijena": 700,
+    "opis": "Carbon-Fiber mono-block speargun from Bleutec. Includes 2x16 BleuTec Speed power bands and BleuTec Diamond spearshaft. Does not include reel.",
+    "favorit": false,
+    "rezenzije": [
+      {
+        "recenzija_id": 3,
+        "ocjena": 4,
+        "komentar": "Domet je oko 3 metra, preciznost dobra.",
+        "username": "ante"
+      },
+      {
+        "recenzija_id": 4,
+        "ocjena": 5,
+        "komentar": "Odlična puška!",
+        "username": "jozo"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "naziv": "Bluetec Acid 105",
+    "image_name": "bluetec_acid.jpg",
+    "cijena": 700,
+    "opis": "Carbon-Fiber mono-block speargun from Bleutec. Includes 2x16 BleuTec Speed power bands and BleuTec Diamond spearshaft. Does not include reel.",
+    "favorit": false,
+    "rezenzije": [
+      {
+        "recenzija_id": 3,
+        "ocjena": 4,
+        "komentar": "Domet je oko 3 metra, preciznost dobra.",
+        "username": "ante"
+      },
+      {
+        "recenzija_id": 4,
+        "ocjena": 5,
+        "komentar": "Odlična puška!",
+        "username": "jozo"
+      }
+    ]
+  }
+]
