@@ -1,3 +1,7 @@
+<div id="search-div">
+  <input type="text" #search placeholder="Upišite pojam" (keyup)="onSearch(search.value)">
+</div>
+
 <div class="products-wrapper">
   <div class="product" *ngFor="let product of (products | async)">
     <div class="content-header">

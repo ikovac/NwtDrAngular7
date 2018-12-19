@@ -2,3 +2,18 @@
   max-width: 1000px;
   margin: auto;
 }
+
+
+@media all and (min-width: 850px) {
+  main {
+    display: grid;
+    grid-template-columns: auto 200px;
+    grid-gap: 20px;
+    .content {
+      grid-column: 1;
+    }
+    .sidebar {
+      grid-column: 2 / span 1;
+    }
+  }
+}
