@@ -48,24 +48,15 @@ export class ProductListComponent implements OnInit, OnDestroy {
     });
   }
 
-  onWishlistAddClick(product: ProductInterface) {
-    product.favorit = !product.favorit;
-    if (product.favorit) {
-      this.message = 'Proizvod je dodan u favorite';
-    } else {
-      this.message = 'Proizvod je uklonjen iz favorita';
-    }
-    setTimeout(() => {
-      this.message = '';
-    }, 3000);
-  }
-
   onSearch(value: string) {
     this.typing.next(value);
+  }
+
+  onMessage(value: string) {
+    this.message = value;
   }
 
   ngOnDestroy() {
     this.subscription.unsubscribe();
   }
-
 }

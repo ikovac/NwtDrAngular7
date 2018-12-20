@@ -1,3 +1,38 @@
-<p>
-  product-details works!
-</p>
+
+<div class="content" *ngIf="product; else notfound">
+  <div class="content-header">
+      <h2>
+          <i class="fas fa-arrow-left" (click)="onBtnBack()"></i> {{ product.naziv }}
+          <app-favourite-add (message)="onMessage($event)" [product]="product"></app-favourite-add>
+        </h2>
+        <h3>{{ product.cijena }} €</h3>
+  </div>
+  <div class="main-content">
+    <div class="img-wrapper">
+      <img src="../../../assets/images/{{ product.image_name }}" alt="{{ product.naziv }}">
+    </div>
+    <p>{{ product.opis }}</p>
+  </div>
+  <hr>
+
+  <div class="recenzije-container">
+    <h4>Recenzije</h4>
+    <div class="recenzija" *ngFor="let recenzija of product.recenzije">
+      <div class="usr-image-wrapper">
+        <img src="../../../assets/images/user.png" alt="{{ recenzija.username }}">
+      </div>
+      <div class="recenzija-wrapper">
+        <p class="username">{{ recenzija.username }}</p>
+        <div class="rating">
+          <i class="fas fa-star" *ngFor="let item of createRange(recenzija.ocjena)"></i>
+          <i class="far fa-star" *ngFor="let item of createRange(5 - recenzija.ocjena)"></i>
+        </div>
+        <p>{{ recenzija.komentar }}</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<ng-template #notfound>Proizvod ne postoji.</ng-template>
+
+<app-message [messageText]="message"></app-message>

@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { RecenzijaInterface } from 'src/app/RecenzijaInterface';
 
 @Component({
   selector: 'app-rate',
@@ -6,10 +7,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./rate.component.scss']
 })
 export class RateComponent implements OnInit {
+  @Input() recenzije: RecenzijaInterface[];
+  ocjene: number[] = [];
 
   constructor() { }
 
   ngOnInit() {
+    this.ocjene = this.recenzije.map(rec => rec.ocjena);
+  }
+
+  getOcjena(): number {
+    const sum = this.ocjene.reduce((suma, crntValue) => suma + crntValue);
+    return (sum / this.ocjene.length);
   }
 
 }

@@ -10,12 +10,8 @@
           [routerLink]="['/proizvod', product.id]"
           routerLinkActive="router-link-active"
           >{{ product.naziv }}</a
-        ><i
-          title="Dodaj u favorite"
-          class="fas fa-heart"
-          [ngClass]="{ added: product.favorit }"
-          (click)="onWishlistAddClick(product)"
-        ></i>
+        >
+        <app-favourite-add (message)="onMessage($event)" [product]="product"></app-favourite-add>
       </h2>
       <h3>{{ product.cijena }} €</h3>
     </div>
@@ -28,6 +24,7 @@
       </div>
       <p class="opis">{{ product.opis }}</p>
     </div>
+    <app-rate [recenzije]="product.recenzije"></app-rate>
   </div>
 </div>
 

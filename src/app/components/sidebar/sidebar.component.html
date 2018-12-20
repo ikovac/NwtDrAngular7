@@ -1,3 +1,8 @@
-<p>
-  sidebar works!
-</p>
+<div class="sidebar">
+  <h3>Favoriti</h3>
+  <ol>
+    <li *ngFor="let product of products" routerLinkActive="router-link-active" >
+      <a [routerLink]="['/proizvod', product.id]">{{ product.naziv }}</a>
+    </li>
+  </ol>
+</div>

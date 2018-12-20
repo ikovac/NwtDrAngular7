@@ -1,0 +1,45 @@
+.content {
+  .content-header {
+    h2 {
+      i {
+        margin-right: 15px;
+        cursor: pointer;
+      }
+    }
+  }
+  .main-content {
+    .img-wrapper {
+      img {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+      }
+    }
+  }
+
+  .recenzije-container {
+    .recenzija {
+      display: flex;
+      border-bottom: 1px solid black;
+      padding: 20px;
+      .usr-image-wrapper {
+        margin-right: 20px;
+        img {
+          max-width: 70px;
+        }
+      }
+      .recenzija-wrapper {
+        .username {
+          font-weight: bold;
+          margin: 0;
+          margin-bottom: 10px;
+        }
+        .rating {
+          .fas.fa-star {
+            color: yellow;
+          }
+        }
+      }
+    }
+  }
+}

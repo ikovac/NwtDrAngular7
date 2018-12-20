@@ -1,0 +1,21 @@
+.sidebar {
+  margin-top: 45px;
+  background-color: white;
+  padding: 10px;
+  box-shadow: 3px 4px 7px 1px #484848;
+  ol {
+    padding: 0 20px;
+    margin: 0;
+    li {
+      margin-bottom: 10px;
+      a {
+        color: black;
+        text-decoration: none;
+        &:hover {
+          color: #34a0ff;
+        }
+      }
+
+    }
+  }
+}
