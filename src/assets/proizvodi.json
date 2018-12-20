@@ -45,23 +45,23 @@
   },
   {
     "id": 3,
-    "naziv": "Bluetec Acid 105",
-    "image_name": "bluetec_acid.jpg",
-    "cijena": 700,
-    "opis": "Carbon-Fiber mono-block speargun from Bleutec. Includes 2x16 BleuTec Speed power bands and BleuTec Diamond spearshaft. Does not include reel.",
+    "naziv": "C4 Graphite Carbotitanium Megaforce T 700",
+    "image_name": "megaforce.jpg",
+    "cijena": 610,
+    "opis": "Graphite is an elegant design speargun, an exclusive product fruit of years of study and researches. It is intended for people fond of technology at art level, people who can recognize technology at top level. The homogeneity and fluidity of movements under water makes the lining up of Graphite to a moving target very easy, quick and effective.",
     "favorit": false,
     "recenzije": [
       {
-        "recenzija_id": 3,
+        "recenzija_id": 4,
         "ocjena": 4,
-        "komentar": "Domet je oko 3 metra, preciznost dobra.",
-        "username": "ante"
+        "komentar": "Vrlo lagana i praktična",
+        "username": "josip"
       },
       {
-        "recenzija_id": 4,
+        "recenzija_id": 3,
         "ocjena": 5,
-        "komentar": "Odlična puška!",
-        "username": "jozo"
+        "komentar": "Đubreee",
+        "username": "zdravko mamic"
       }
     ]
   }
