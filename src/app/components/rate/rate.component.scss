@@ -1,0 +1,11 @@
+.rate-stars {
+  direction: rtl;
+  i {
+    cursor: pointer;
+    font-size: 20px;
+  }
+
+  i:hover:before, i:hover ~ i:before {
+    color: gold;
+  }
+}

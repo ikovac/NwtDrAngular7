@@ -18,7 +18,10 @@ export class RateComponent implements OnInit {
 
   getOcjena(): number {
     const sum = this.ocjene.reduce((suma, crntValue) => suma + crntValue);
-    return (sum / this.ocjene.length);
+    return Math.round((sum / this.ocjene.length));
   }
 
+  onStarClick(ocjena: number) {
+    this.ocjene.push(ocjena);
+  }
 }
